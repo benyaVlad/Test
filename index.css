@@ -1,0 +1,231 @@
+body{
+    font-family: PT Sans;
+    font-style: normal;
+    margin: 0;
+}
+.heading {
+    height: 127px;
+    background-color: #0072BC;
+    display: flex;
+    justify-content: center;
+}
+.heading_block {
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+.heading_logo {
+    font-size: 32px;
+    display: flex;
+
+}
+.heading_context{
+    width:60%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.heading_context button {
+    width: 252px;
+    height: 62px;
+    background: #F26522;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+.heading_context button:hover{
+    background: transparent;
+    border: 2px solid white;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.heading_font {
+    color: white;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 24px;
+}
+.first_block{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 24px;
+}
+.middle_block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.middle_block_text p{
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 24px;
+    text-align: center;
+}
+.middle_block_text p:last-child{
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 34px;
+}
+
+.actual_position p:first-child{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 34px;
+}
+.actual_position_column{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.column {
+    text-align: center;
+    border: 2px solid #ACACAC;
+    border-radius: 10px;
+    padding-top:5px;
+}
+.column_heading{
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 24px;
+    color:#8E0000;
+}
+.column_text{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
+.column a{
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+    color: #444444;
+    text-decoration: none;
+    outline: none;
+}
+.column:first-child a{
+    color: green;
+}
+.footer_content {
+    background-color: #6DCFF6;
+    height: 750px;
+}
+.footer_content p{
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 24px;
+    color: white;
+    text-align: center;
+
+}
+
+
+.slider{
+    position: relative;
+    margin-top: 100px;
+    height: 80%;
+}
+.slick-list {
+    overflow: hidden;
+}
+.slick-track{
+    display: flex;
+}
+
+
+.slider .slick-arrow{
+    position: absolute;
+    bottom: 25%;
+    z-index: 10;
+    font-size: 0;
+    width: 30px;
+    height: 60px;
+
+}
+.slider .slick-arrow.slick-prev{
+    left: 40%;
+    background: url("img/left-arrow (1).svg");
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+
+}
+.slider .slick-arrow.slick-next{
+    right: 38%;
+    background: url("img/right-arrow (2).svg");
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+}
+.slider .slick-arrow:hover{
+    transform: scale(1.2);
+}
+.slider_item{
+    width: 900px;
+    height: 300px;
+    text-align: center;
+    margin-top: 70px;
+}
+.slider .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider .slick-dots li{
+    list-style: none;
+}
+.slider .slick-dots li button{
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    margin: 0 25px;
+}
+.slider .slick-dots li.slick-active  button{
+    background-color: transparent;
+    border: 5px solid white;
+}
+.slick-track{
+    display: flex;
+}
+
+.year{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+@media (max-width: 1200px) {
+    .actual_position_column{
+        flex-direction: column;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .actual_position p{
+        text-align: center;
+    }
+}
+@media (max-width: 950px) {
+    .middle_block_text{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+@media (max-width: 750px){
+    .heading_block{
+        justify-content: space-around;
+        width: 90%;
+    }
+    .slider_item {
+        min-width: 450px;
+        min-height: 150px;
+    }
+}
